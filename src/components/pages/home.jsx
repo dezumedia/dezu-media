@@ -1,5 +1,4 @@
 import { getPosts } from "@/services/post.service";
-import Navbar from "../ui/navbar";
 import { useState, useEffect } from "react";
 
 const HomePage = () => {
@@ -12,11 +11,7 @@ const HomePage = () => {
   }, []);
 
   console.log(posts);
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return <></>;
 };
 
 export default HomePage;
