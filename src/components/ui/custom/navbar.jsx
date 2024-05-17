@@ -6,6 +6,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -37,7 +44,7 @@ const Navbar = () => {
       ${isHidden ? "-translate-y-full" : "translate-y-0"}`}
     >
       <Sheet>
-        <SheetTrigger>
+        <SheetTrigger className="focus:outline-none">
           <svg
             width="30"
             height="30"
@@ -53,13 +60,52 @@ const Navbar = () => {
             ></path>
           </svg>
         </SheetTrigger>
-        <SheetContent>
-          <SheetHeader>
-            <SheetTitle>Menu</SheetTitle>
-            <SheetDescription> </SheetDescription>
+        <SheetContent className="flex justify-start">
+          <SheetHeader className="w-full">
+            <SheetTitle className="pb-3 -mt-2 text-xl capitalize">
+              dezu media
+            </SheetTitle>
+            <SheetDescription className="w-full">
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1" className="px-2">
+                  <AccordionTrigger>test</AccordionTrigger>
+                  <AccordionContent className="text-start">
+                    <ul>
+                      <li>ayam</li>
+                      <li>gigi</li>
+                      <li>roti</li>
+                      <li>roti</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2" className="px-2">
+                  <AccordionTrigger>test</AccordionTrigger>
+                  <AccordionContent className="text-start">
+                    <ul>
+                      <li>ayam</li>
+                      <li>gigi</li>
+                      <li>roti</li>
+                      <li>roti</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3" className="px-2">
+                  <AccordionTrigger>test</AccordionTrigger>
+                  <AccordionContent className="text-start">
+                    <ul>
+                      <li>ayam</li>
+                      <li>gigi</li>
+                      <li>roti</li>
+                      <li>roti</li>
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </SheetDescription>
           </SheetHeader>
         </SheetContent>
       </Sheet>
+
       <a href="" className="max-w-20">
         <img className="" src="/logo/dezu-media.svg" alt="dezu-media" />
       </a>
