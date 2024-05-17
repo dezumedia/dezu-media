@@ -11,20 +11,21 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
   const [isHidden, setHidden] = useState(false);
   let lastScrollY = 0;
+  const threshold = 100;
 
   useEffect(() => {
     const handleScroll = () => {
-      if (lastScrollY <= window.scrollY) {
-        setHidden(true);
-      } else {
-        setHidden(false);
+      const currentScrollY = window.scrollY;
+      if (Math.abs(currentScrollY - lastScrollY) > threshold) {
+        if (currentScrollY > lastScrollY) {
+          setHidden(true);
+        } else {
+          setHidden(false);
+        }
+        lastScrollY = currentScrollY;
       }
-
-      lastScrollY = window.scrollY;
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
