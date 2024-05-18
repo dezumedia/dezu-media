@@ -10,7 +10,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/components/ui/Accordion";
 import { useEffect, useState, useRef } from "react";
 import navbarRoutes from "../../../data/navbar-routes.json";
 
