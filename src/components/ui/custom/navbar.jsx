@@ -12,7 +12,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -62,46 +61,52 @@ const Navbar = () => {
         </SheetTrigger>
         <SheetContent className="flex justify-start">
           <SheetHeader className="w-full">
-            <SheetTitle className="pb-3 -mt-2 text-xl capitalize">
+            <SheetTitle className="pb-3 -mt-2 text-xl capitalize ">
               dezu media
             </SheetTitle>
-            <SheetDescription className="w-full">
-              <Accordion type="single" collapsible>
-                <AccordionItem value="item-1" className="px-2">
-                  <AccordionTrigger>test</AccordionTrigger>
-                  <AccordionContent className="text-start">
-                    <ul>
-                      <li>ayam</li>
-                      <li>gigi</li>
-                      <li>roti</li>
-                      <li>roti</li>
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-2" className="px-2">
-                  <AccordionTrigger>test</AccordionTrigger>
-                  <AccordionContent className="text-start">
-                    <ul>
-                      <li>ayam</li>
-                      <li>gigi</li>
-                      <li>roti</li>
-                      <li>roti</li>
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-3" className="px-2">
-                  <AccordionTrigger>test</AccordionTrigger>
-                  <AccordionContent className="text-start">
-                    <ul>
-                      <li>ayam</li>
-                      <li>gigi</li>
-                      <li>roti</li>
-                      <li>roti</li>
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            </SheetDescription>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="item-1" className="px-2">
+                <AccordionTrigger>entertainment</AccordionTrigger>
+                <AccordionContent className="px-1 text-start">
+                  <h4 className="mb-2 font-semibold uppercase text-zinc-400">
+                    sections
+                  </h4>
+                  <div className="flex flex-col gap-2 text-lg capitalize text-zinc-800 dark:text-zinc-400">
+                    <a href="">anime</a>
+                    <a href="">manga</a>
+                    <a href="">Movie & Series</a>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="px-2">
+                <AccordionTrigger>entertainment</AccordionTrigger>
+                <AccordionContent className="px-1 text-start">
+                  <h4 className="mb-2 font-semibold uppercase text-zinc-400">
+                    sections
+                  </h4>
+                  <div className="flex flex-col gap-2 text-lg capitalize text-zinc-800 dark:text-zinc-400">
+                    <a href="">anime</a>
+                    <a href="">manga</a>
+                    <a href="">Movie & Series</a>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="px-2">
+                <AccordionTrigger>entertainment</AccordionTrigger>
+                <AccordionContent className="px-1 text-start">
+                  <h4 className="mb-2 font-semibold uppercase text-zinc-400">
+                    sections
+                  </h4>
+                  <div className="flex flex-col gap-2 text-lg capitalize text-zinc-800 dark:text-zinc-400">
+                    <a href="">anime</a>
+                    <a href="">manga</a>
+                    <a href="">Movie & Series</a>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </SheetHeader>
         </SheetContent>
       </Sheet>
