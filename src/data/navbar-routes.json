@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "entertainment",
+    "pages": [
+      {
+        "name": "otaku news",
+        "path": "/otaku-news"
+      },
+      {
+        "name": "anime",
+        "path": "/anime"
+      },
+      {
+        "name": "manga",
+        "path": "/manga"
+      },
+      {
+        "name": "dorama",
+        "path": "/dorama"
+      },
+      {
+        "name": "cosplay",
+        "path": "/cosplay"
+      },
+      {
+        "name": "v-tuber",
+        "path": "/v-tuber"
+      },
+      {
+        "name": "hobby",
+        "path": "/hobby"
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "name": "culture",
+    "pages": [
+      {
+        "name": "tradition",
+        "path": "/tradition"
+      },
+      {
+        "name": "history",
+        "path": "/history"
+      },
+      {
+        "name": "myth & urban legend",
+        "path": "/myth-urban-legend"
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "japan travel",
+    "pages": [
+      {
+        "name": "explore the region",
+        "path": "/explore-the-region"
+      },
+      {
+        "name": "culinary",
+        "path": "/history"
+      },
+      {
+        "name": "event in japan",
+        "path": "/event-in-japan"
+      }
+    ]
+  },
+
+  {
+    "id": 4,
+    "name": "lifestyle",
+    "pages": [
+      {
+        "name": "japan fact",
+        "path": "/japan-fact"
+      },
+      {
+        "name": "life & relationship",
+        "path": "/life-relationship"
+      },
+      {
+        "name": "pet & animal",
+        "path": "/pet-animal"
+      }
+    ]
+  },
+
+  {
+    "id": 5,
+    "name": "technology",
+    "pages": [
+      {
+        "name": "developer",
+        "path": "/developer"
+      },
+      {
+        "name": "tech news",
+        "path": "/tech-news"
+      },
+      {
+        "name": "gadget",
+        "path": "/gadget"
+      }
+    ]
+  }
+]

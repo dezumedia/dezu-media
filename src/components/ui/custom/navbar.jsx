@@ -1,7 +1,6 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -12,30 +11,32 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import navbarRoutes from "../../../data/navbar-routes.json";
 
 const Navbar = () => {
   const [isHidden, setHidden] = useState(false);
-  let lastScrollY = 0;
+  const lastScrollY = useRef(0);
   const threshold = 100;
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (Math.abs(currentScrollY - lastScrollY) > threshold) {
-        if (currentScrollY > lastScrollY) {
+      if (Math.abs(currentScrollY - lastScrollY.current) > threshold) {
+        if (currentScrollY > lastScrollY.current) {
           setHidden(true);
         } else {
           setHidden(false);
         }
-        lastScrollY = currentScrollY;
+        lastScrollY.current = currentScrollY;
       }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [threshold]);
 
   return (
     <nav
@@ -65,57 +66,37 @@ const Navbar = () => {
               dezu media
             </SheetTitle>
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1" className="px-2">
-                <AccordionTrigger>entertainment</AccordionTrigger>
-                <AccordionContent className="px-1 text-start">
-                  <h4 className="mb-2 font-semibold uppercase text-zinc-400">
-                    sections
-                  </h4>
-                  <div className="flex flex-col gap-2 text-lg capitalize text-zinc-800 dark:text-zinc-400">
-                    <a href="">anime</a>
-                    <a href="">manga</a>
-                    <a href="">Movie & Series</a>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2" className="px-2">
-                <AccordionTrigger>entertainment</AccordionTrigger>
-                <AccordionContent className="px-1 text-start">
-                  <h4 className="mb-2 font-semibold uppercase text-zinc-400">
-                    sections
-                  </h4>
-                  <div className="flex flex-col gap-2 text-lg capitalize text-zinc-800 dark:text-zinc-400">
-                    <a href="">anime</a>
-                    <a href="">manga</a>
-                    <a href="">Movie & Series</a>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-3" className="px-2">
-                <AccordionTrigger>entertainment</AccordionTrigger>
-                <AccordionContent className="px-1 text-start">
-                  <h4 className="mb-2 font-semibold uppercase text-zinc-400">
-                    sections
-                  </h4>
-                  <div className="flex flex-col gap-2 text-lg capitalize text-zinc-800 dark:text-zinc-400">
-                    <a href="">anime</a>
-                    <a href="">manga</a>
-                    <a href="">Movie & Series</a>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
+              {navbarRoutes.map((menu) => (
+                <AccordionItem
+                  value={`item-${menu.id}`}
+                  className="px-2"
+                  key={menu.id}
+                >
+                  <AccordionTrigger>{menu.name}</AccordionTrigger>
+                  <AccordionContent className="px-1 text-start">
+                    <h4 className="mb-2 font-semibold uppercase text-zinc-400">
+                      sections
+                    </h4>
+                    <div className="flex flex-col gap-2 text-lg capitalize text-zinc-800 dark:text-zinc-400">
+                      {menu.pages.map((page) => (
+                        <a href={page.path} key={page.name}>
+                          {page.name}
+                        </a>
+                      ))}
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
             </Accordion>
           </SheetHeader>
         </SheetContent>
       </Sheet>
 
-      <a href="" className="max-w-20">
+      <a href="/" className="max-w-20">
         <img className="" src="/logo/dezu-media.svg" alt="dezu-media" />
       </a>
 
-      <a href="">
+      <a href="/search">
         <svg
           width="30"
           height="30"
