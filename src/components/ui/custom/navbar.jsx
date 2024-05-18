@@ -4,7 +4,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/ui/Sheet";
 import {
   Accordion,
   AccordionContent,
