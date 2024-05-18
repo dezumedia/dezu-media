@@ -1,14 +1,14 @@
-import { getPosts } from "@/services/post.service";
-import { useState, useEffect } from "react";
+// import { getPosts } from "@/services/post.service";
+// import { useState, useEffect } from "react";
 
 const HomePage = () => {
   document.body.style.height = "2000px";
-  const [posts, setPosts] = useState({});
-  useEffect(() => {
-    getPosts((data) => {
-      setPosts(data);
-    });
-  }, []);
+  // const [posts, setPosts] = useState({});
+  // useEffect(() => {
+  //   getPosts((data) => {
+  //     setPosts(data);
+  //   });
+  // }, []);
 
   return (
     <>
