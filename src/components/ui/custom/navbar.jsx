@@ -4,13 +4,13 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/Sheet";
+} from "@/components/ui/sheet";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/Accordion";
+} from "@/components/ui/accordion";
 import { useEffect, useState, useRef } from "react";
 import navbarRoutes from "../../../data/navbar-routes.json";
 
