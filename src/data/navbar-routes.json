@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "entertainment",
-    "image": "https://i.ibb.co.com/R6wFwy3/entertainment.webp",
+    "image": "/navbar-image/entertainment.webp",
     "pages": [
       {
         "name": "otaku news",
@@ -34,7 +34,7 @@
   {
     "id": 2,
     "name": "culture",
-    "image": "https://i.ibb.co.com/cXJjnyT/culture.webp",
+    "image": "/navbar-image/culture.webp",
     "pages": [
       {
         "name": "tradition",
@@ -56,7 +56,7 @@
   {
     "id": 3,
     "name": "explore japan",
-    "image": "https://i.ibb.co.com/jz4jvQz/explore-jpn.webp",
+    "image": "/navbar-image/explore-jpn.webp",
     "pages": [
       {
         "name": "explore the region",
@@ -78,7 +78,7 @@
   {
     "id": 4,
     "name": "lifestyle",
-    "image": "https://i.ibb.co.com/CBYTR7f/life-style.webp",
+    "image": "/navbar-image/life-style.webp",
     "pages": [
       {
         "name": "japan fact",
@@ -100,7 +100,7 @@
   {
     "id": 5,
     "name": "technology",
-    "image": "https://i.ibb.co.com/rwnCbDW/technology.webp",
+    "image": "/navbar-image/technology.webp",
     "pages": [
       {
         "name": "developer",
