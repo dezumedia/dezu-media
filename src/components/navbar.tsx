@@ -3,13 +3,10 @@
 import { useEffect, useState, useRef } from "react";
 import MobileMenu from "./mobile-menu";
 import DesktopMenu from "./desktop-menu";
-import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
-import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const [isHidden, setHidden] = useState(false);
-  const { theme } = useTheme();
   const lastScrollY = useRef(0);
   const threshold = 100;
 
@@ -40,18 +37,6 @@ const Navbar = () => {
       <div className="flex items-center justify-between mx-auto lg:max-w-5xl">
         <MobileMenu classname="lg:hidden" />
         <a href="/">
-          {/* <Image
-            src={
-              theme == "light"
-                ? "/logo/dezu-media-black.svg"
-                : "/logo/dezu-media-white.svg"
-            }
-            width={100}
-            height={100}
-            alt="dezu-media"
-            className="w-full h-auto bg-cover rounded-md "
-            property="true"
-          /> */}
           <svg
             width="133"
             height="auto"
