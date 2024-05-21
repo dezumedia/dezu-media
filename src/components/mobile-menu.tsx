@@ -12,6 +12,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import navbarRoutes from "../data/navbar-routes.json";
+import ThemeToggle from "./theme-toggle";
 
 const MobileMenu = (props: { classname: string }) => {
   const { classname } = props;
@@ -50,9 +51,13 @@ const MobileMenu = (props: { classname: string }) => {
                   <h4 className="mb-2 font-semibold uppercase text-zinc-400">
                     sections
                   </h4>
-                  <div className="flex flex-col gap-2 text-base capitalize text-zinc-800 dark:text-zinc-400 font-light">
+                  <div className="flex flex-col gap-3">
                     {menu.pages.map((page) => (
-                      <a href={page.path} key={page.name}>
+                      <a
+                        href={page.path}
+                        key={page.name}
+                        className="text-base capitalize text-zinc-800 dark:text-zinc-400 font-medium"
+                      >
                         {page.name}
                       </a>
                     ))}
@@ -61,6 +66,7 @@ const MobileMenu = (props: { classname: string }) => {
               </AccordionItem>
             ))}
           </Accordion>
+          <ThemeToggle className="absolute bottom-6 right-6" />
         </SideBarHeader>
       </SideBarContent>
     </SideBar>

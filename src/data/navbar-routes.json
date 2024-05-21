@@ -10,14 +10,9 @@
         "description": "Dapatkan berita terbaru dan informasi terkini dari dunia otaku."
       },
       {
-        "name": "anime",
+        "name": "anime & manga",
         "path": "/anime",
-        "description": "Temukan ulasan, sinopsis, dan berita terbaru tentang anime favoritmu."
-      },
-      {
-        "name": "manga",
-        "path": "/manga",
-        "description": "temukan ulasan tentang manga, mangaka, dan perkembangan terbaru di dunia manga."
+        "description": "Temukan ulasan, sinopsis, dan berita terbaru tentang anime dan manga favoritmu."
       },
       {
         "name": "dorama",
@@ -61,17 +56,17 @@
       {
         "name": "explore the region",
         "path": "/explore-the-region",
-        "description": "Panduan lengkap untuk menjelajahi berbagai daerah di Jepang. Temukan destinasi menarik dan tempat-tempat tersembunyi yang menunggu untuk dijelajahi!"
+        "description": "Jelajahi berbagai daerah di Jepang. Temukan destinasi menarik dan tempat-tempat tersembunyi!"
       },
       {
         "name": "culinary",
         "path": "/culinary",
-        "description": "Nikmati kelezatan kuliner Jepang! Artikel tentang makanan khas, resep lezat, dan rekomendasi restoran yang wajib dicoba."
+        "description": "Artikel tentang makanan khas, resep lezat, dan rekomendasi restoran yang wajib dicoba."
       },
       {
         "name": "event in japan",
         "path": "/event-in-japan",
-        "description": "Tetap update dengan acara-acara seru di Jepang! Dari festival tradisional hingga konser musik!"
+        "description": "Tetap update dengan acara-acara seru, dari festival tradisional hingga konser musik!"
       }
     ]
   },

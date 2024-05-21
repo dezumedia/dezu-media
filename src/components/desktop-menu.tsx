@@ -33,7 +33,7 @@ const DesktopMenu = (props: { classname: string }) => {
                   <NavigationMenuLink
                     key={page.name}
                     href={page.path}
-                    className="inline-block w-full p-2 px-3 capitalize transition-colors rounded-md hover:bg-zinc-100"
+                    className="inline-block w-full p-2 px-3 capitalize transition-colors rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
                   >
                     <h4 className="text-lg font-semibold">{page.name}</h4>
                     <p className="text-sm font-light">{page.description}</p>

@@ -1,4 +1,9 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  
+@tailwind components;
+@tailwind utilities;
+
+.doted::before {
+  content: "•";
+  color: rgb(39, 39, 42);
+  margin-right: 0.3rem;
+}
