@@ -20,31 +20,22 @@ const DesktopMenu = (props: { classname: string }) => {
             <NavigationMenuTrigger className="capitalize">
               {menu.name}
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="p-4 grid gap-2 grid-cols-2 lg:w-[615px] overflow-hidden">
-              <Image
-                src={menu.image}
-                alt={menu.name}
-                width={300}
-                height={300}
-                loading="lazy"
-                className="w-full h-auto rounded-md bg-cover"
-              />
-              <div>
-                {menu.pages.map((page) => (
-                  <NavigationMenuLink
-                    key={page.name}
-                    href={page.path}
-                    className="inline-block w-full p-2 px-3 capitalize transition-colors rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-900"
-                  >
-                    <h4 className="text-lg font-semibold text-zinc-950 dark:text-zinc-100">
-                      {page.name}
-                    </h4>
-                    <p className="text-sm font-light text-zinc-700 dark:text-zinc-400">
-                      {page.description}
-                    </p>
-                  </NavigationMenuLink>
-                ))}
-              </div>
+            <NavigationMenuContent className="p-4 gap-2 flex flex-wrap lg:w-[615px] overflow-hidden">
+              {menu.pages.map((page) => (
+                <NavigationMenuLink
+                  key={page.name}
+                  href={page.path}
+                  className="inline-block w-full p-2 px-3 capitalize transition-colors rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-900"
+                >
+                  <h4 className="text-lg font-semibold text-zinc-950 dark:text-zinc-100">
+                    {page.name}
+                  </h4>
+                  <p className="text-sm font-light text-zinc-700 dark:text-zinc-400">
+                    {page.description}
+                  </p>
+                </NavigationMenuLink>
+              ))}
+              {/* </div> */}
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>
