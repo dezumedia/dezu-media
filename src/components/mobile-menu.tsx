@@ -56,7 +56,7 @@ const MobileMenu = (props: { classname: string }) => {
                       <a
                         href={page.path}
                         key={page.name}
-                        className="text-base capitalize text-zinc-800 dark:text-zinc-400 font-medium"
+                        className="text-base capitalize text-zinc-800 dark:text-zinc-300 font-medium"
                       >
                         {page.name}
                       </a>

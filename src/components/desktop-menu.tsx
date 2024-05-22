@@ -8,7 +8,6 @@ import {
   // NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import navbarRoutes from "../data/navbar-routes.json";
-import Image from "next/image";
 
 const DesktopMenu = (props: { classname: string }) => {
   const { classname } = props;
@@ -35,7 +34,6 @@ const DesktopMenu = (props: { classname: string }) => {
                   </p>
                 </NavigationMenuLink>
               ))}
-              {/* </div> */}
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>

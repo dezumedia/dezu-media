@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.doted::before {
-  content: "•";
-  color: rgb(39, 39, 42);
-  margin-right: 0.3rem;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 2000px;
 }
