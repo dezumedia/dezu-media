@@ -2,26 +2,25 @@
   {
     "id": 1,
     "name": "entertainment",
-    "image": "/navbar-image/entertainment.webp",
     "pages": [
       {
         "name": "otaku news",
-        "path": "/otaku-news",
+        "path": "/entertainment/otaku-news",
         "description": "Dapatkan berita terbaru dan informasi terkini dari dunia otaku."
       },
       {
         "name": "anime & manga",
-        "path": "/anime",
+        "path": "/entertainment/anime",
         "description": "Temukan ulasan, sinopsis, dan berita terbaru tentang anime dan manga favoritmu."
       },
       {
         "name": "dorama",
-        "path": "/dorama",
+        "path": "/entertainment/dorama",
         "description": "Info terkini tentang drama Jepang."
       },
       {
         "name": "hobby",
-        "path": "/hobby",
+        "path": "entertainment/hobby",
         "description": "Informasi menarik tentang figurine, hingga koleksi unik lainnya."
       }
     ]
@@ -29,21 +28,20 @@
   {
     "id": 2,
     "name": "culture",
-    "image": "/navbar-image/culture.webp",
     "pages": [
       {
         "name": "tradition",
-        "path": "/tradition",
+        "path": "/culture/tradition",
         "description": "Eksplorasi & Kenali lebih dalam budaya tradisional Jepang!"
       },
       {
         "name": "history",
-        "path": "/history",
+        "path": "/culture/history",
         "description": "Pelajari sejarah Jepang dari masa kuno hingga modern."
       },
       {
         "name": "myth & urban legend",
-        "path": "/myth-urban-legend",
+        "path": "/culture/myth-urban-legend",
         "description": "Cerita mitos dan legenda urban Jepang! Dari cerita rakyat kuno hingga kisah-kisah hantu yang bikin merinding."
       }
     ]
@@ -51,21 +49,20 @@
   {
     "id": 3,
     "name": "explore japan",
-    "image": "/navbar-image/explore-jpn.webp",
     "pages": [
       {
         "name": "explore the region",
-        "path": "/explore-the-region",
+        "path": "/explore-japan/explore-the-region",
         "description": "Jelajahi berbagai daerah di Jepang. Temukan destinasi menarik dan tempat-tempat tersembunyi!"
       },
       {
         "name": "culinary",
-        "path": "/culinary",
+        "path": "/explore-japan/culinary",
         "description": "Artikel tentang makanan khas, resep lezat, dan rekomendasi restoran yang wajib dicoba."
       },
       {
         "name": "event in japan",
-        "path": "/event-in-japan",
+        "path": "/explore-japan/event-in-japan",
         "description": "Tetap update dengan acara-acara seru, dari festival tradisional hingga konser musik!"
       }
     ]
@@ -73,21 +70,20 @@
   {
     "id": 4,
     "name": "lifestyle",
-    "image": "/navbar-image/life-style.webp",
     "pages": [
       {
         "name": "japan fact",
-        "path": "/japan-fact",
+        "path": "/lifestyle/japan-fact",
         "description": "Fakta-fakta menarik tentang Jepang yang mungkin belum kamu ketahui. Dari kebiasaan unik hingga fenomena sosial, semuanya ada di sini!"
       },
       {
         "name": "life & relationship",
-        "path": "/life-relationship",
+        "path": "/lifestyle/life-relationship",
         "description": "Tips dan cerita seputar kehidupan sehari-hari dan hubungan di Jepang. Dapatkan wawasan tentang cara hidup dan bergaul ala Jepang."
       },
       {
         "name": "pet & animal",
-        "path": "/pet-animal",
+        "path": "/lifestyle/pet-animal",
         "description": "Cerita lucu dan tips merawat hewan peliharaan di Jepang. Temukan komunitas pecinta hewan dan pengalaman unik mereka."
       }
     ]
@@ -95,21 +91,20 @@
   {
     "id": 5,
     "name": "technology",
-    "image": "/navbar-image/technology.webp",
     "pages": [
       {
         "name": "developer",
-        "path": "/developer",
+        "path": "/technology/developer",
         "description": "Informasi dan tips terbaru untuk para developer. Dari coding hingga pengembangan aplikasi, temukan sumber daya yang kamu butuhkan."
       },
       {
         "name": "tech news",
-        "path": "/tech-news",
+        "path": "/technology/tech-news",
         "description": "Berita terkini tentang dunia teknologi. Update tentang inovasi terbaru, produk-produk baru, dan perkembangan industri teknologi."
       },
       {
         "name": "gadget",
-        "path": "/gadget",
+        "path": "/technology/gadget",
         "description": "Review dan berita tentang gadget terbaru. Dari smartphone canggih hingga perangkat elektronik unik, semua ada di sini untuk para tech enthusiasts!"
       }
     ]
