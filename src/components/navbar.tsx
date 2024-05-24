@@ -35,7 +35,7 @@ const Navbar = () => {
         className={`fixed top-0 px-3 py-3 bg-white dark:bg-zinc-950 shadow-md w-full duration-500 ease-in-out
       ${isHidden ? "-translate-y-full" : "translate-y-0"}`}
       >
-        <div className="flex items-center justify-between mx-auto lg:max-w-5xl">
+        <div className="flex items-center justify-between desktop-w">
           <MobileMenu classname="lg:hidden" />
           <a href="/">
             <svg
