@@ -1,9 +1,13 @@
-export default function Home() {
+import MobileCarousel from "@/components/custom/mobile-carousel";
+
+const Home = () => {
   return (
     <>
-      <div className="desktop-w">
-        <h1>hello world</h1>
-      </div>
+      <main className="desktop-w">
+        <MobileCarousel />
+      </main>
     </>
   );
-}
+};
+
+export default Home;

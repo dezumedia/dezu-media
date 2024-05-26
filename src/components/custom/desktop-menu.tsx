@@ -7,7 +7,7 @@ import {
   NavigationMenuTrigger,
   // NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import navbarRoutes from "../data/navbar-routes.json";
+import navbarRoutes from "../../data/navbar-routes.json";
 import { usePathname } from "next/navigation";
 
 const DesktopMenu = (props: { classname: string }) => {

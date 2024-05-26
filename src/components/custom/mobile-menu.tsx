@@ -11,7 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import navbarRoutes from "../data/navbar-routes.json";
+import navbarRoutes from "../../data/navbar-routes.json";
 import ThemeToggle from "./theme-toggle";
 import { TextAlignLeftIcon } from "@radix-ui/react-icons";
 
