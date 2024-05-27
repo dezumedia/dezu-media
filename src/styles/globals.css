@@ -5,9 +5,9 @@
   html {
     @apply scroll-smooth;
   }
-  body {
+  /* body {
     height: 2000px;
-  }
+  } */
   .desktop-w {
     @apply xl:max-w-5xl mx-auto;
   }
