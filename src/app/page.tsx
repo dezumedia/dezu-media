@@ -1,15 +1,9 @@
 import MobileCarousel from "@/components/custom/mobile-carousel";
 
-import {
-  BlocksRenderer,
-  type BlocksContent,
-} from "@strapi/blocks-react-renderer";
-import "../styles/content.css";
-
 const token = process.env.NEXT_PUBLIC_ACCESS_TOKEN;
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-async function getDataPosts() {
-  const res = await fetch(`${apiUrl}/posts`, {
+async function getDataArticle() {
+  const res = await fetch(`${apiUrl}/articles`, {
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token}`,
@@ -20,16 +14,12 @@ async function getDataPosts() {
 }
 
 export default async function Home() {
-  const { data } = await getDataPosts();
-
-  const content: BlocksContent = data[1].attributes.content;
+  const { data } = await getDataArticle();
   return (
     <>
       <main className="desktop-w">
         <MobileCarousel />
-        <article className="px-4">
-          <BlocksRenderer content={content} />
-        </article>
+        <article className="px-4"></article>
       </main>
     </>
   );
