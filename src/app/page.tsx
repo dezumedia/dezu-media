@@ -1,20 +1,19 @@
 import MobileCarousel from "@/components/custom/mobile-carousel";
-
-const token = process.env.NEXT_PUBLIC_ACCESS_TOKEN;
-const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-async function getDataArticle() {
-  const res = await fetch(`${apiUrl}/articles`, {
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${token}`,
-    },
-  });
-  const data = res.json();
-  return data;
-}
+// const token = process.env.NEXT_PUBLIC_ACCESS_TOKEN;
+// const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+// async function getDataArticle() {
+//   const res = await fetch(`${apiUrl}/articles`, {
+//     headers: {
+//       "Content-Type": "application/json",
+//       Authorization: `Bearer ${token}`,
+//     },
+//   });
+//   const data = res.json();
+//   return data;
+// }
 
 export default async function Home() {
-  const { data } = await getDataArticle();
+  // const { data } = await getDataArticle();
   return (
     <>
       <main className="desktop-w">
