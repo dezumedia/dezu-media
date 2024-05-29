@@ -14,14 +14,19 @@
         "description": "Temukan ulasan, sinopsis, dan berita terbaru tentang anime dan manga favoritmu."
       },
       {
+        "name": "games",
+        "path": "/entertainment/games",
+        "description": "Temukan ulasan dan informasi menarik mengenai console dan game terbaru."
+      },
+      {
         "name": "dorama",
         "path": "/entertainment/dorama",
-        "description": "Info terkini tentang drama Jepang."
+        "description": "Temukan ulasan terkini dan informasi menarik tentang drama Jepang."
       },
       {
         "name": "hobby",
-        "path": "entertainment/hobby",
-        "description": "Informasi menarik tentang figurine, hingga koleksi unik lainnya."
+        "path": "/entertainment/hobby",
+        "description": "Informasi menarik tentang figurine hingga koleksi unik lainnya."
       }
     ]
   },
@@ -32,7 +37,7 @@
       {
         "name": "tradition",
         "path": "/culture/tradition",
-        "description": "Eksplorasi & Kenali lebih dalam budaya tradisional Jepang!"
+        "description": "Eksplorasi dan kenali lebih dalam budaya tradisional Jepang!"
       },
       {
         "name": "history",

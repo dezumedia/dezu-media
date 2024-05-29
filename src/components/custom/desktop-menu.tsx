@@ -21,17 +21,17 @@ const DesktopMenu = (props: { classname: string }) => {
             <NavigationMenuTrigger className="capitalize">
               {menu.name}
             </NavigationMenuTrigger>
-            <NavigationMenuContent className="p-4 gap-2 flex flex-wrap lg:w-[615px] overflow-hidden">
+            <NavigationMenuContent className="p-4 flex flex-wrap lg:w-[615px] overflow-hidden">
               {menu.pages.map((page) => (
                 <NavigationMenuLink
                   key={page.name}
                   href={page.path}
-                  className={`inline-block w-full p-2 capitalize transition-colors rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-900
+                  className={`inline-block w-full p-2 transition-colors rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-900
                   ${
                     pathName == page.path ? "bg-zinc-100 dark:bg-zinc-900" : ""
                   }`}
                 >
-                  <h4 className="text-lg font-semibold text-zinc-950 dark:text-zinc-100">
+                  <h4 className="text-lg font-semibold text-zinc-950 dark:text-zinc-100 capitalize">
                     {page.name}
                   </h4>
                   <p className="text-sm font-light text-zinc-700 dark:text-zinc-400">
