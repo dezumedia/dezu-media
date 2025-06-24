@@ -1,0 +1,127 @@
+/* markdown-styles.css */
+
+/* Gaya umum untuk elemen markdown */
+.reactMarkDown {
+  color: inherit; /* Pastikan teks mewarisi warna dari elemen induk */
+  font-size: 1rem; /* Ukuran font default */
+  line-height: 1.6; /* Line height untuk kenyamanan membaca */
+}
+
+.reactMarkDown p {
+  margin-bottom: 1em; /* Jarak antar paragraf */
+  opacity: 0.9;
+}
+
+.reactMarkDown a {
+  color: #f97316; /* Warna tautan */
+  text-decoration: underline; /* Garis bawah pada tautan */
+  font-weight: 600;
+}
+
+.reactMarkDown strong {
+  font-weight: bold; /* Teks tebal */
+}
+
+.reactMarkDown em {
+  font-style: italic; /* Teks miring */
+}
+
+.reactMarkDown blockquote {
+  border-left: 4px solid #f97316; /* Gaya kutipan blok */
+  padding-left: 1em;
+  opacity: 0.6;
+  margin: 1.5em 0;
+}
+
+.reactMarkDown ul,
+.reactMarkDown ol {
+  margin: 1em 0;
+  padding-left: 2em; /* Indentasi untuk daftar */
+}
+
+.reactMarkDown ul {
+  list-style-type: disc; /* Titik-titik untuk daftar tidak terurut */
+}
+.reactMarkDown ol {
+  list-style-type: decimal; /* Angka untuk daftar terurut */
+}
+
+.reactMarkDown li {
+  margin-bottom: 0.5em; /* Jarak antar item daftar */
+}
+
+.reactMarkDown img {
+  width: 100%; /* Lebar gambar penuh */
+  border-radius: 0.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.reactMarkDown iframe {
+  width: 100%; /* Lebar iframe penuh */
+  height: 30vh; /* Tinggi iframe 30% dari tinggi viewport */
+  border: none; /* Tanpa border */
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .reactMarkDown iframe {
+    height: 45vh; /* Tinggi iframe 45% dari tinggi viewport di layar lebar */
+  }
+}
+
+.reactMarkDown table {
+  width: 100%; /* Lebar tabel penuh */
+  border-collapse: collapse; /* Menggabungkan border */
+  margin-bottom: 1em; /* Jarak bawah tabel */
+}
+
+.reactMarkDown th,
+.reactMarkDown td {
+  border: 1px solid #ddd; /* Border pada sel */
+  padding: 0.5em; /* Padding dalam sel */
+}
+
+.reactMarkDown th {
+  background-color: #f2f2f2; /* Latar belakang header tabel */
+}
+
+.reactMarkDown code {
+  background-color: #f9f2f4; /* Latar belakang kode */
+  color: #c7254e; /* Warna teks kode */
+  padding: 0.2em 0.4em; /* Padding dalam kode */
+  border-radius: 3px; /* Border radius */
+}
+
+.reactMarkDown pre {
+  background-color: #f9f2f4; /* Latar belakang pre */
+  padding: 1em; /* Padding dalam pre */
+  overflow: auto; /* Overflow auto */
+  border-radius: 3px; /* Border radius */
+}
+
+/* Gaya untuk heading */
+.reactMarkDown h1 {
+  font-size: 2em; /* 32px */
+}
+
+.reactMarkDown h2 {
+  font-size: 1.5em; /* 24px */
+}
+
+.reactMarkDown h3 {
+  font-size: 1.17em; /* 18.72px */
+}
+
+.reactMarkDown h4 {
+  font-size: 1em; /* 16px */
+}
+
+.reactMarkDown h5 {
+  font-size: 0.83em; /* 13.28px */
+}
+
+.reactMarkDown h6 {
+  font-size: 0.67em; /* 10.72px */
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "entertainment",
+    "pages": [
+      {
+        "name": "otaku news",
+        "path": "/entertainment/otaku-news",
+        "description": "Dapatkan berita terbaru dan informasi terkini dari dunia otaku."
+      },
+      {
+        "name": "aniManga",
+        "path": "/entertainment/animanga",
+        "description": "Temukan ulasan, sinopsis, dan berita terbaru tentang anime dan manga favoritmu."
+      },
+      {
+        "name": "Movie",
+        "path": "/entertainment/movie",
+        "description": "Temukan ulasan, sinopsis, dan berita terbaru tentang film-film favoritmu"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "games",
+    "pages": [
+      {
+        "name": "game news",
+        "path": "/games/game-news",
+        "description": "Temukan ulasan dan berita terbaru tentang game favoritmu."
+      },
+      {
+        "name": "game tech",
+        "path": "/games/game-tech",
+        "description": "Informasi menarik mengenaik teknologi yang dipakai pada sebuah game."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "culture",
+    "pages": [
+      {
+        "name": "world culture",
+        "path": "/culture/world-culture",
+        "description": "Dapatkan informasi tentang budaya, dan gaya hidup orang orang di seluruh dunia"
+      },
+      {
+        "name": "world fact",
+        "path": "/culture/world-fact",
+        "description": "Fakta-fakta menarik tentang Dunia yang mungkin belum kamu ketahui. Dari kebiasaan unik hingga fenomena sosial, semuanya ada di sini!"
+      },
+      {
+        "name": "explore the world",
+        "path": "/culture/explore-the-world",
+        "description": "Temukan tempat tempat menarik dan indah yang ada di seluruh dunia"
+      },
+      {
+        "name": "pet & animal",
+        "path": "/culture/pet-animal",
+        "description": "Cerita lucu dan tips merawat hewan peliharaan. Temukan komunitas pecinta hewan dan pengalaman unik mereka."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "technology",
+    "pages": [
+      {
+        "name": "tech news",
+        "path": "/technology/tech-news",
+        "description": "Berita terkini tentang dunia teknologi. Update tentang inovasi terbaru, produk-produk baru, dan perkembangan industri teknologi."
+      },
+      {
+        "name": "developer",
+        "path": "/technology/developer",
+        "description": "Informasi dan tips terbaru untuk para developer. Dari coding hingga pengembangan aplikasi, temukan sumber daya yang kamu butuhkan."
+      },
+      {
+        "name": "gadget",
+        "path": "/technology/gadget",
+        "description": "Review dan berita tentang gadget terbaru. Dari smartphone canggih hingga perangkat elektronik unik, semua ada di sini untuk para tech enthusiasts!"
+      }
+    ]
+  }
+]

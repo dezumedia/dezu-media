@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  html {
+    @apply scroll-smooth;
+  }
+  /* body {
+    height: 2000px;
+  } */
+  .desktop-w {
+    @apply xl:max-w-6xl mx-auto;
+  }
+  .carousel-shadow {
+    box-shadow: inset 0px -160px 50px -50px #000;
+  }
+}
